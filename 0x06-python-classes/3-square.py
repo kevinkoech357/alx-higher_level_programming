@@ -21,4 +21,4 @@ class Square:
             """
             Computes and returns area of Square
             """
-            return self.__size * self.__size
+            return (self.__size * self.__size)
