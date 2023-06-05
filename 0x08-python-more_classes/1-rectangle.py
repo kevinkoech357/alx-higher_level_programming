@@ -7,11 +7,15 @@ Creates a class Rectangle.
 
 class Rectangle:
     """
-    Initializes an instance of Rectangle.
+    Represents a Rectangle object with width and height.
     """
     def __init__(self, width=0, height=0):
         """
         Initializes a Rectangle with width and height.
+
+        Args:
+            width (int): Width of Rectangle. Default is 0.
+            height (int): Height of Rectangle. Default is 0.
         """
         self._width = width
         self._height = height
@@ -19,7 +23,10 @@ class Rectangle:
     @property
     def width(self):
         """
-        Returns width.
+        Gets width of Rectangle.
+
+        Returns:
+            int: Width of the Rectangle.
         """
         return self._width
 
@@ -27,7 +34,13 @@ class Rectangle:
     def width(self, value):
         """
         Sets the width of Rectangle.
-        Performs some checks in lieu with set exceptions.
+
+        Args:
+            value (int): The width value to assign/set.
+
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is less than 0.
         """
         if type(value) != int:
             raise TypeError("width must be an integer")
@@ -39,7 +52,11 @@ class Rectangle:
     @property
     def height(self):
         """
-        Returns height.
+        Gets height of Rectangle.
+
+
+        Returns:
+            int: Height of the Rectangle.
         """
         return self._height
 
@@ -47,7 +64,13 @@ class Rectangle:
     def height(self, value):
         """
         Sets height of Rectangle.
-        Performs some checks in lieu with set exceptions.
+
+        Args:
+            value (int): The height value to assign/set.
+
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is less than 0.
         """
         if type(value) != int:
             raise TypeError("height must be an integer")
