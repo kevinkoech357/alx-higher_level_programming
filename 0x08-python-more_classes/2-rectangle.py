@@ -95,4 +95,7 @@ class Rectangle:
         Returns:
             int: Computed perimeter of Rectangle.
         """
-        return (2 * (self._width + self._height))
+        if self._width == 0 or self._height == 0:
+            return (0)
+        else:
+            return (2 * (self._width + self._height))
