@@ -28,7 +28,7 @@ class Rectangle:
         Returns:
             int: Width of the Rectangle.
         """
-        return self._width
+        return (self._width)
 
     @width.setter
     def width(self, value):
@@ -58,7 +58,7 @@ class Rectangle:
         Returns:
             int: Height of the Rectangle.
         """
-        return self._height
+        return (self._height)
 
     @height.setter
     def height(self, value):
@@ -78,7 +78,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self._height = value
-    
+
     def area(self):
         """
         Calculates area of Rectangle.
@@ -86,4 +86,13 @@ class Rectangle:
         Returns:
             int: Computed area of Rectangle.
         """
-        return self._width * self._height
+        return (self._width * self._height)
+
+    def perimeter(self):
+        """
+        Calculates perimeter of Rectangle.
+
+        Returns:
+            int: Computed perimeter of Rectangle.
+        """
+        return (2 * (self._width + self._height))
