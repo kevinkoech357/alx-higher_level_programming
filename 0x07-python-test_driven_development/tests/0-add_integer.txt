@@ -3,10 +3,11 @@
   [GCC 9.4.0] on linux
   Type "help", "copyright", "credits" or "license" for more information.
   -----------------------------------------------------------------------
+
+  >>> add_integer = __import__('0-add_integer').add_integer
   -----------------------------------------------------------------------
   output using integers
   -----------------------------------------------------------------------
-  >>> from add_integer import add_integer
   >>> add_integer(2, 1)
   2
   >>> add_integer(100, 100)
