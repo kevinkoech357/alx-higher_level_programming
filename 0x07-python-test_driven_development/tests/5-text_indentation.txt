@@ -1,0 +1,35 @@
+=============================================
+doctest for text_indentation function
+============================================
+
+--------------------------------------------
+importing
+--------------------------------------------
+
+  >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+============================================
+tests and expected output
+============================================
+
+  >>> text_indentation("")
+  <BLANKLINE>
+
+  >>> text_indentation(5)
+  Traceback (most recent call last):
+    ...
+  TypeError: text must be a string
+
+  >>> text_indentation(7.7)
+  Traceback (most recent call last):
+    ...
+  TypeError: text must be a string
+
+  >>> text_indentation("Welcome to ALX. An excelerator program for learning software engineering.")
+  Welcome to ALX.
+  <BLANKLINE>
+   An excelerator program for learning software engineering.
+
+  >>> text_indentation("No chars")
+  No chars
+
