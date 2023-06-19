@@ -133,3 +133,18 @@ class Rectangle(Base):
         Returns area value of Rectangle.
         """
         return self.__width * self.__height
+
+    def display(self):
+        """
+        Prints to stdout Rectangle
+        instance with # symbol.
+        """
+        for _ in range(self.__y):
+            print()
+        for i in range(self.__height):
+            for j in range(self.__width + self.__x):
+                if j < self.__x:
+                    print(" ", end="")
+                    continue
+                print("#", end="")
+            print()
