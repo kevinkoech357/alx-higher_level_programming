@@ -21,3 +21,27 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
         self.size = size
+
+    @property
+    def size(self):
+        """
+        Retrieves size from Rectangle.
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """
+        Sets and validates from class Rectangle.
+        """
+        self.width = value
+        self.height = value
+
+    def __str__(self):
+        """
+        Returns a string representation
+        of the instance of Square.
+        """
+        return ("[Square] ({}) {}/{} - {}".format(
+            self.id, self.x, self.y, self.height
+        ))
