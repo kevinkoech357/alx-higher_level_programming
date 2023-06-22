@@ -60,7 +60,7 @@ class Base:
             return []
         else:
             return json.loads(json_string)
-        
+
     @classmethod
     def create(cls, **dictionary):
         """
@@ -72,7 +72,7 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return (dummy)
-    
+
     @classmethod
     def load_from_file(cls):
         """
