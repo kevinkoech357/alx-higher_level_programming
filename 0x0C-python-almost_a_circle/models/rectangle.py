@@ -167,7 +167,7 @@ class Rectangle(Base):
                 setattr(self, new[i], args[i])
         else:
             for j in kwargs:
-                setattr(self, k, kwargs[k])
+                setattr(self, j, kwargs[j])
 
     def to_dictionary(self):
         """
