@@ -1,2 +1,4 @@
 -- SQL Script to delete a database
-DROP DATABASE hbtn_0c_0;
+-- If db exists, the script will not fail
+
+DROP DATABASE IF EXISTS hbtn_0c_0;
