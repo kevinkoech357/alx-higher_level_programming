@@ -17,5 +17,7 @@ On this repository, you'll find tasks done in python3, sql and javascript.
 - [0x0C-python-almost_a_circle](https://github.com/kevinkoech357/alx-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
 - [0x0D-SQL_introduction](https://github.com/kevinkoech357/alx-higher_level_programming/tree/main/0x0D-SQL_introduction)
 - [0x0E-SQL_more_queries](https://github.com/kevinkoech357/alx-higher_level_programming/tree/main/0x0E-SQL_more_queries)
+- [0x12-javascript-warm_up](https://github.com/kevinkoech357/alx-higher_level_programming/tree/main/0x12-javascript-warm_up)
+- [0x13-javascript_objects_scopes_closures](https://github.com/kevinkoech357/alx-higher_level_programming/tree/main/0x13-javascript_objects_scopes_closures)
 
 You can click on these links to access the respective directories in the provided repository.
