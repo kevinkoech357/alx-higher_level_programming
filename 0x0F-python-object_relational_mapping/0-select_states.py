@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 # This script lists all states from hbtn_0e_0_usa db
+
 import MySQLdb
 from sys import argv
+
 
 if __name__ == '__main__':
     db = MySQLdb.connect(host="localhost", user=argv[1],
@@ -14,3 +15,5 @@ if __name__ == '__main__':
 
     for row in range(rows):
         print(cursor.fetchone())
+
+    db.close()
