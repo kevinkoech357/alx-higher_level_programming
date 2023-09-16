@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Takes user input and displays where name == user_input
+'''
+Takes user input and displays where name == user_input
+'''
+
 
 import MySQLdb
 import sys

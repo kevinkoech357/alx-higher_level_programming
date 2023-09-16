@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Lists states with a name starting with N
+
+'''
+Lists states with a name starting with N
+'''
+
 
 import MySQLdb
 import sys
