@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 
 '''
 Lists states with a name starting with N
@@ -24,4 +23,5 @@ if __name__ == "__main__":
     for row in rows:
         print(row)
 
+    cur.close()
     db.close()
