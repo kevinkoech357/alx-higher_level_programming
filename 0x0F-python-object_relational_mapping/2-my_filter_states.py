@@ -18,8 +18,8 @@ if __name__ == "__main__":
                          passwd=password, db=database)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE BINARY name='{:s}'
-                ORDER BY id ASC" .format(user_input))
+    cur.execute("SELECT * FROM states WHERE LIKE name BINARY '{}'
+                ORDER BY id ASC".format(user_input))
 
     rows = cur.fetchall()
     for row in rows:
