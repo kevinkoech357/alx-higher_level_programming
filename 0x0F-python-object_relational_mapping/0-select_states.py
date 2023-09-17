@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/python3
 
-'''
-This script lists all states from hbtn_0e_0_usa db
-'''
-
+"""
+This module contains a script that lists
+all states in a database
+"""
 
 import MySQLdb
 from sys import argv
@@ -20,4 +19,5 @@ if __name__ == '__main__':
     for row in range(rows):
         print(cursor.fetchone())
 
+    cursor.close()
     db.close()
