@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/python3
 
 """
 Defines a class State which is an instance
@@ -22,8 +21,5 @@ class State(Base):
     """
 
     __tablename__ = 'states'
-    id = Column(
-        Integer, primary_key=True, nullable=False,
-        unique=True, autoincrement=True
-    )
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
