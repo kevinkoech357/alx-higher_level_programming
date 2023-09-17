@@ -26,4 +26,4 @@ class State(Base):
         Integer, primary_key=True, nullable=False,
         unique=True, autoincrement=True
     )
-    name = Column(String(255), nullable=False)
+    name = Column(String(128), nullable=False)
