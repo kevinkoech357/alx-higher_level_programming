@@ -15,6 +15,6 @@ request.get(url, (error, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('Status Code:', response.statusCode);
+    console.log('code:', response.statusCode);
   }
 });

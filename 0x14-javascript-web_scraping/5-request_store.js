@@ -16,12 +16,14 @@ const filePath = process.argv[3];
 request.get(url, (error, response, body) => {
   if (error) {
     console.error(error);
+    process.exit(1); // Exit with an error code if there is an error
   } else {
     fs.writeFile(filePath, body, 'utf-8', (writeError) => {
       if (writeError) {
         console.error(writeError);
+        process.exit(1); // Exit with an error code if there is an error
       } else {
-        console.log(`${filePath} has been successfully written.`);
+        process.exit(0); // Exit with a success code if the file is successfully written
       }
     });
   }

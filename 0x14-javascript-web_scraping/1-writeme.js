@@ -15,7 +15,8 @@ const content = process.argv[3];
 fs.writeFile(filePath, content, 'utf-8', (err) => {
   if (err) {
     console.error(err);
+    process.exit(1); // Exit with an error code if there is an error
   } else {
-    console.log('Content has been successfully written to the file.');
+    process.exit(0); // Exit with a success code
   }
 });
