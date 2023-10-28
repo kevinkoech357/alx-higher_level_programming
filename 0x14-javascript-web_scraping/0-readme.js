@@ -4,7 +4,6 @@ const fs = require('fs');
 
 // Check if a file path is provided as an argument
 if (process.argv.length !== 3) {
-  console.error('Usage: node read_file.js <file_path>');
   process.exit(1); // Exit with an error code
 }
 
