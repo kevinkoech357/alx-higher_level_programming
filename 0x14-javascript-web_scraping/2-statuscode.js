@@ -4,7 +4,6 @@ const request = require('request');
 
 // Check if a URL is provided as an argument
 if (process.argv.length !== 3) {
-  console.error('Usage: node get_request_status.js <URL>');
   process.exit(1); // Exit with an error code
 }
 

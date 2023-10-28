@@ -4,7 +4,6 @@ const fs = require('fs');
 
 // Check if both file path and content arguments are provided
 if (process.argv.length !== 4) {
-  console.error('Usage: node write_file.js <file_path> "<content>"');
   process.exit(1); // Exit with an error code
 }
 
